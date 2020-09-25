@@ -1,0 +1,45 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>CS7893 Database Systems: Assignment 10 - Web Programming</title>
+</head>
+
+<body alink="#FF0000" background="gifs/bkg2.gif" bgcolor="#FFFFFF" link="#0000FF" text="#000000" vlink="#800080">
+<h4> CS7893 Database Systems <br>
+  Spring 2019, Assignment 12 <br>
+  Web Programming Using PHP <br>
+  Due: June 11, 2019 </h4>
+<p> Consider the following relational table for maintaining contact information: <br>
+  給定如下關聯式表格以儲存並維護聯絡人資訊 </p>
+<pre>create table contacts (
+  lname  varchar(30),
+  fname  varchar(30),
+  email  varchar(30),
+  homePhone varchar(20),
+  cellPhone varchar(20),
+  officePhone varchar(20),
+  address varchar(100),
+  comment varchar(100),
+  primary key (lname,fname)
+);
+</pre>
+Design and implement a set of HTML/PhP pages that allow the user to<br>
+設計並以 HTML/PHP 實作下列網頁功能:<br>
+<ol>
+  <li> ADD a contact
+    新增連絡人</li>
+  <li> DELETE one or more contacts: You need to show all the contacts in a tabular form
+    with check boxes next to each contact; The user will choose contacts to delete by checking the
+    checkboxes and Submitting the form.
+    刪除一至多筆連絡人: 顯示所有連絡人並在每個項目旁加一個複選框. 使用者可勾選要刪除的連絡人並按下送出按鈕.</li>
+  <li> UPDATE one or more contacts: You need to show all contacts in a tabular form with check
+    boxes next to each contact; The non-key columns should be displayed as text boxes so that the
+    user may change values; The user chooses contacts to be updated and provides new values in
+    the text boxes and submits.
+    更新一至多筆連絡人: 顯示所有連絡人並在每個項目旁加一個複選框. 使用者可勾選要更新的連絡人並按下送出按鈕. 所有非鍵值欄位皆以輸入文字框顯示, 以便使用者更改其值.</li>
+  <li> SEARCH by keyword: Search only fname or lname.
+    搜尋鍵值: 輸入 fname 或 lname 並顯示符合條件的連絡人.</li>
+  <li> LIST all contacts (one page with just fname and lname - hyperlinked); Hyperlinks lead
+    to a detailed page.
+    列出所有連絡人的姓名; 點按之後以超連結顯示細節.</li>
+</ol>
+</body></html>
